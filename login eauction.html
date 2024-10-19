@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods eAUCTION</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.js">
+    <link rel="stylesheet" href="login eauctions style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="login form validation.js"></script>
+</head>
+
+<body style="background-color: aquamarine;">
+    <!--header start -->
+    <nav class="navbar navbar-expand-lg  px-4 border-bottom">
+        <div class="container-fluid">
+            <a href="index.HTML" class="navbar-brand"><img src="image/image/NITESH eAUCTION LOGO.jpeg"
+                    alt="eAUCTION logo" height="40px" width="40px">eAUCTIONS</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0  text-left">
+                    <li class="nav-item"><a href="index.HTML" class="nav-link" aria-current="page"><img
+                                src="image/image/house-chimney-user.png" alt="home logo" height="20px"
+                                width="20px">Home</a></li>
+                    <li class="nav-item"><a href="home page.html" class="nav-link" aria-current="page">Auction
+                            Status</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="categories eauction.html" class="nav-link dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown" id="navbarDropdown" aria-expanded="false">
+                            <img src="image/image/category.png" alt="category logo" height="20px"
+                                width="20px">Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="categories eauction.html">Electronics</a></li>
+                            <li><a href="categories eauction.html" class="dropdown-item">Arts & Antiques</a></li>
+                            <li><a href="categories eauction.html" class="dropdown-item">Vehicles</a></li>
+                            <li><a href="categories eauction.html" class="dropdown-item">Real Estate</a></li>
+                            <li><a href="categories eauction.html" class="dropdown-item">Start Up</a></li>
+                            <li><a href="categories eauction.html" class="dropdown-item">Fashion</a></li>
+                            <li><a href="categories eauction.html" class="dropdown-item">Furniture</a></li>
+                            <li><a href="categories eauction.html" class="dropdown-item">Gold</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="live auction.html" class="nav-link"><img
+                                src="image/image/live-alt.png" alt="live logo" height="20px" width="20px">Live
+                            Auctions</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Upcoming Auctions</a></li>
+                    <li class="nav-item"><a href="help and support.html" class="nav-link"><img
+                                src="image/image/user-headset.png" alt="support logo" height="20px" width="20px">Help &
+                            Support</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><img src="image/image/address-book.png"
+                                alt="address logo" height="20px" width="20px">Contact Us</a></li>
+                    <li class="nav-item"><a href="Cart.html" class="nav-link"><img src="image/image/trolley.png"
+                                alt="cart logo" height="20px" width="20px">Cart</a></li>
+                    <li class="nav-item"><a href="signup eauctions.html" class="nav-link"><button
+                                class="btn btn-primary" type="button" id="signup">REGISTER</button></a></li>
+                </ul>
+                <form action="" class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--end of header part-->
+
+
+    <!--login form-->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card shadow-lg slide">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Login</h2>
+                        <form action="home page.html" method="POST" name="myform" onsubmit="return formvalidations()">
+                            <div class="form-group">
+                                <div class="mb-3">
+                                    <div class="formdesign" id="email">
+                                        <label for="em" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="em" name="femail"
+                                            placeholder="Email" required><b><span class="formerror"> </span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="mb-3">
+                                    <div class="formdesign" id="pass">
+                                        <label for="psd" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="psd" name="fpass"
+                                            placeholder="password" required><b><span class="formerror"> </span></b>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="but" type="submit" class="btn btn-primary btn-block" value="Login" />
+                        </form>
+                        <p class="text-center mt-3">Don't have an account? <a href="signup eauctions.html"
+                                style=" text-decoration: none;">Sign up here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of login-->
+
+
+    <!--footer part-->
+    <section id="contact">
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="#" class="navbar-brand"><img src="image/image/NITESH eAUCTION LOGO.jpeg"
+                            alt="eAUCTION logo" height="40px" width="40px">eAUCTIONS</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="term_condition.html">Terms & Conditions</a></li>
+                        <li><a href="/contact">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="https://facebook.com" target="_blank"><img src="image/image/youtube (1).png"
+                            alt="Youtube logo" height="20px" width="20px"> Youtube </a>
+                    <a href="https://facebook.com" target="_blank"><img src="image/image/facebook (1).png"
+                            alt="Facebook logo" height="20px" width="20px"> Facebook </a>
+                    <a href="https://twitter.com" target="_blank"><img src="image/image/twitter-alt-circle.png"
+                            alt="Twitter logo" height="20px" width="20px"> Twitter </a>
+                    <a href="https://instagram.com" target="_blank"><img src="image/image/instagram.png"
+                            alt="Instagram logo" height="20px" width="20px"> Instagram </a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><img src="image/image/circle-envelope.png" alt="logo" height="20px" width="20px">
+                        support:goodseauction@company.com</p>
+                    <p><img src="image/image/phone-call.png" alt="phone logo" height="20px" width="20px">
+                        Phone:+6209127917</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 eAUCTION.com , All Rights Reserved.</p>
+                <p><a href="/privacy-policy">Privacy Policy</a> | <a href="term_condition.html">Terms & Conditions</a>
+                </p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
